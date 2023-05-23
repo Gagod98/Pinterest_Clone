@@ -1,0 +1,31 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15vw 20vw 20vw auto;
+    gap: 50px;
+    grid-template-areas: 
+    "nav nav nav"
+    "main . ."
+    "main . ."
+    ". . .";
+}
+
+.navi{
+ display: flex;
+ align-content: space-between;
+ flex-wrap: wrap;
+}
+
+button:hover {
+    text-decoration: none;
+    border: 1px black;
+
+}
+
+.margen{
+    border: 1px solid black;
+}
+
+nav{
+    grid-area:nav;
+}
