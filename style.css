@@ -1,24 +1,49 @@
 .contenedor-grid{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 15vw 20vw 20vw auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30vw 30vw 35vw;
     gap: 50px;
     grid-template-areas: 
-    "nav nav nav"
-    "main . ."
-    "main . ."
-    ". . .";
+    "main main main"
+    "main main main"
+    "main main main";
 }
 
 .navi{
  display: flex;
- align-content: space-between;
+ position: fixed;
+ justify-content: space-between;
  flex-wrap: wrap;
+ width: 98vw;
 }
 
+.barra-de-busqueda{
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid rgb(97, 97, 97);
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 80%;
+    height: 30px
+    
+}
+
+.navipeq{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(97, 97, 97);
+    
+}
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(97, 97, 97);
+    
+}
+
+
 button:hover {
-    text-decoration: none;
-    border: 1px black;
+    border: 1px solid black;
 
 }
 
