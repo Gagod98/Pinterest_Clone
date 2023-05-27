@@ -37,8 +37,48 @@ nav{
     display: flex;
     flex-wrap: wrap;
     border: 1px solid rgb(97, 97, 97);
+    align-items: center;
     
 }
+
+.svg-pinterest {
+    border: 1px;
+    width: 26px;
+    height: 26px;
+    #Pinterest-Button {
+      #Pinterest {
+        fill: #f80202;
+      }
+    }
+  }
+
+
+.Boton-Inicio{
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    border-radius: 100px;
+    width: 4vw;
+    height: 5vh;
+}
+
+.Botones{
+    font-size: 15px;
+    border-radius: 100px;
+    width: 7vw;
+    height: 5vh;
+}
+
+.svg-flecha {
+    border: 1px;
+    width: 25px;
+    height: 25px;
+    #Pinterest-Button {
+      #Pinterest {
+        fill: #000000;
+      }
+    }
+  }
 
 
 button:hover {
@@ -53,16 +93,16 @@ button:hover {
 .imagenes {
     display: inline-block;
    margin-top: 70px;
-   margin-left: 40px;
-   margin-right: 40px;
+   margin-left: 60px;
+   margin-right: 60px;
    column-count: 7;
-   column-gap: 20px;
+   column-gap: 5px;
     
 }
 
 .div-imagenes{
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
     
 }
@@ -75,4 +115,7 @@ button:hover {
     
   
 }
+
+
+
 
