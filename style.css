@@ -1,21 +1,19 @@
-.contenedor-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 30vw 30vw 35vw;
-    gap: 50px;
-    grid-template-areas: 
-    "main main main"
-    "main main main"
-    "main main main";
-}
 
-.navi{
+
+nav{
  display: flex;
  position: fixed;
  justify-content: space-between;
- flex-wrap: wrap;
+ flex-wrap: wrap;   
+ padding: 15px;
  width: 98vw;
+ background-color: white;
+ top: 0px;
+ left: 0px;
+ right: 0px;
 }
+
+
 
 .barra-de-busqueda{
     display: flex;
@@ -27,6 +25,7 @@
     height: 30px
     
 }
+
 
 .navipeq{
     display: flex;
@@ -51,6 +50,29 @@ button:hover {
     border: 1px solid black;
 }
 
-nav{
-    grid-area:nav;
+.imagenes {
+    display: inline-block;
+   margin-top: 70px;
+   margin-left: 40px;
+   margin-right: 40px;
+   column-count: 7;
+   column-gap: 20px;
+    
 }
+
+.div-imagenes{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+
+.div-imagenes img {
+    display: block;
+    max-height: 100%;
+    border-radius: 30px;
+    max-width: 235px;
+    
+  
+}
+
