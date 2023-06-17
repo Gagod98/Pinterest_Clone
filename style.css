@@ -1,31 +1,35 @@
 
+ 
 
 nav{
  display: flex;
  position: fixed;
  flex-wrap: wrap;   
  padding: 15px;
- width: 98vw;
+ width: auto;
  height: 50px;
  background-color: white;
  top: 0px;
  left: 0px;
  right: 0px;
+ justify-content: space-between;
+ align-items: center;
 }
 
 .div-barra-busqueda{
   display: flex;
   width: fit-content;
   align-items: center;
-  width: 60%
+  width: 60%;
+  border: solid black;
+  
 }
 
 .barra-de-busqueda{
     display: flex;
     border-radius: 50px;
-    border: 1px solid rgb(97, 97, 97);
     flex-wrap: wrap; 
-    width: 100%;
+    width: 90%;
     height: 30px;
     
 }
@@ -34,22 +38,28 @@ nav{
 .navipeq{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid rgb(97, 97, 97);
+    
     justify-content: flex-start;
     
 }
 .wraper{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid rgb(97, 97, 97);
+    
     justify-content: flex-start;
     
+    
+}
+.wraper3{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 5px;
 }
 .wraper2{
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgb(97, 97, 97);
-  width: 100%;
+  align-items: center;
   justify-content: space-between;
   
 }
@@ -78,6 +88,8 @@ nav{
 .Botones{
     font-size: 15px;
     border-radius: 100px;
+    border: transparent;
+    text-align: center;
     width: 5vw;
     height: 5vh;
 }
@@ -111,24 +123,25 @@ button:hover {
 
 }
 
-.margen{
-    border: 1px solid black;
-}
+
 
 .imagenes {
   display: inline-block;
+  width: 95vw;
    margin-top: 70px;
    margin-left: 60px;
    margin-right: 60px;
    column-count: 7;
-   column-gap: 1px;
+   column-gap: 0.5px;
     
 }
 
 .div-imagenes{
     display: inline-block;
-    margin-bottom: 15px;
-    width: 100%;
+    margin-bottom: 25px;
+    max-width: auto;
+    max-height: auto;
+    margin-top: 10px;
     
 }
 
@@ -136,7 +149,7 @@ button:hover {
     display: block;
     max-height: 100%;
     border-radius: 30px;
-    max-width: 235px;
+    max-width: 100%;
     
   
 }
