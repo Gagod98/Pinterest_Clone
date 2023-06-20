@@ -3,6 +3,7 @@
 
 nav{
  display: flex;
+ z-index: 1;
  position: fixed;
  flex-wrap: wrap;   
  padding: 15px;
@@ -38,7 +39,6 @@ nav{
 .navipeq{
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: flex-start;
     
 }
@@ -125,35 +125,84 @@ button:hover {
 
 
 
-.imagenes {
+main {
   display: inline-block;
   width: 95vw;
    margin-top: 70px;
-   margin-left: 60px;
-   margin-right: 60px;
+   margin-left: 30px;
+   margin-right: 10px;
    column-count: 7;
-   column-gap: 0.5px;
+   column-gap: 0.1px;
     
 }
 
 .div-imagenes{
-    display: inline-block;
-    margin-bottom: 25px;
-    max-width: auto;
-    max-height: auto;
-    margin-top: 10px;
-    
-}
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: fit-content;
+    max-height: fit-content;
+  
 
-.div-imagenes img {
-    display: block;
-    max-height: 100%;
-    border-radius: 30px;
-    max-width: 100%;
-    
   
 }
 
+.img {
+    display: flex;
+    max-height: 600px;
+    border-radius: 30px;
+    max-width: 236px;
+    
+}
 
+.div-imagenes:hover .interior{
+  opacity: 1;
+}
 
+.interior{
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translate(200%, -130%)
+
+}
+
+.botonesAbajo{
+  background-color: white;
+  border-radius: 50px;
+  width: 2rem;
+  height: 2rem;
+  margin-right:5px;
+}
+
+.superior{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translate(10%, 130%);
+  width: 200px;
+}
+
+.div-imagenes:hover .superior{
+  opacity: 1;
+}
+
+.perfil{
+  background-color:none;
+  border-radius:30px;
+  width:6rem;
+  height: 3rem;
+  color: white;
+  border: none;
+}
+
+.botonRojo{
+  background-color: #f80202;
+  border-radius:30px;
+  width: 6rem;
+  height: 3rem;
+  color: white;
+  border: none;
+}
 
