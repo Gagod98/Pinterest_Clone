@@ -1,5 +1,12 @@
 
- 
+.Botones{
+  font-size: 15px;
+  border-radius: 100px;
+  border: transparent;
+  text-align: center;
+  width: 5vw;
+  height: 5vh;
+}
 
 nav{
  display: flex;
@@ -13,28 +20,98 @@ nav{
  top: 0px;
  left: 0px;
  right: 0px;
- justify-content: space-between;
+ justify-content: flex-start;
  align-items: center;
 }
+/* Nav Izquierda */
+
+.crear{
+  display: flex;
+  font-size: 15px;
+  border-radius: 100px;
+  border: transparent;
+  text-align: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.Boton-Inicio{
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  border-radius: 100px;
+  width: 4vw;
+  height: 5vh;
+}
+
+.wraper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.wraper3{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin-right: 5px;
+}
+.wraper2{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+.svg-pinterest {
+  border: 1px;
+  width: 26px;
+  height: 26px;
+  #Pinterest-Button {
+    #Pinterest {
+      fill: #f80202;
+    }
+  }
+}
+
+.svg-flecha {
+  border: 1px;
+  width: 25px;
+  height: 20px;
+  #Flecha {
+    #FlechaA {
+      fill: #000000;
+    }
+  }
+}
+.divFlecha{
+  display: flex;
+  align-items: center;
+  transform: scale(0.5);
+
+}
+/* Barra de busqueda*/
 
 .div-barra-busqueda{
   display: flex;
-  width: fit-content;
   align-items: center;
-  width: 60%;
-
-  
+  width: 75%;
 }
+
 
 .barra-de-busqueda{
     display: flex;
     border-radius: 50px;
     flex-wrap: wrap; 
-    width: 90%;
-    height: 30px;
-    
+    width: 100%;
+    height: 40px;
+    border: 0px;
 }
 
+.barra-de-busqueda:focus {
+  border: 2px aliceblue;
+}
 
 .navipeq{
     display: flex;
@@ -42,73 +119,34 @@ nav{
     justify-content: flex-start;
     
 }
-.wraper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
 
-.kayin{
+/* Nav derecha*/
+
+.svg-flechad {
+  border: 1px;
   width: 25px;
-  height: 25px;
-}
-.wraper3{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-right: 5px;
-}
-.wraper2{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-
-.svg-pinterest {
-    border: 1px;
-    width: 26px;
-    height: 26px;
-    #Pinterest-Button {
-      #Pinterest {
-        fill: #f80202;
-      }
+  height: 20px;
+  #Flechad {
+    #FlechaD {
+      fill: #686767;
     }
   }
-
-
-.Boton-Inicio{
-    background-color: black;
-    font-size: 15px;
-    color: white;
-    border-radius: 100px;
-    width: 4vw;
-    height: 5vh;
 }
 
-.Botones{
-    font-size: 15px;
-    border-radius: 100px;
-    border: transparent;
-    text-align: center;
-    width: 5vw;
-    height: 5vh;
+
+
+.divFlecha2{
+  display: flex;
+  align-items: center;
+  transform: scale(0.5);
 }
 
-.svg-flecha {
-    border: 1px;
-    width: 30px;
-    height: 20px;
-    #Flecha {
-      #FlechaA {
-        fill: #000000;
-      }
-    }
-  }
+
 
   .svg-campana{
     border: 1px;
+    margin-right: 20px;
+    margin-left: 10px;
     width: 25px;
     height: 25px;
     #Campana {
@@ -120,6 +158,7 @@ nav{
 
   .svgPuntos{
     border: 1px;
+    margin-right: 20px;
     width: 24px;
     height: 24px;
     #puntos {
@@ -129,12 +168,13 @@ nav{
     }
   }
   
+  .kayin{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 30px;
+  }
 
-
-button:hover {
-    border: 1px solid black;
-
-}
 
 
 
@@ -162,7 +202,7 @@ main {
 }
 
 .div-imagenes:hover {
-  filter:brightness(70%)
+  filter:brightness(85%)
 }
 
 .img {
@@ -206,13 +246,36 @@ main {
   opacity: 1;
 }
 
-.perfil{
-  background-color:none;
-  border-radius:30px;
-  width:6rem;
-  height: 3rem;
-  color: white;
-  border: none;
+.divFlecha3{
+  display: flex;
+  align-items:flex-start;
+  transform: scale(0.4);
+}
+
+.divPerfil{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.svg-flechap {
+  border: 1px;
+  width: 25px;
+  height: 20px;
+  #Flechap {
+    #FlechaP {
+      fill: #ffffff;
+    }
+  }
+}
+
+.perfil {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-decoration-line: none;
+  text-decoration: none;
 }
 
 .botonRojo{
